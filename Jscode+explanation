@@ -16,28 +16,29 @@ inputedVal=inputedVal+25; //or inputedVal+=25;
 alert(inputedVal);  //HERE WE`RE CALLING THE FUNCTION IS A FUNCTION CALL IN jS THE ALERT FUNCTION IS ALREADY WRITED IN SO THAT`S WHY WE CAN CALL IT
 
 //BUT IF WE WANTED TO CREATE A FUNCTION WE WILL DO THIS:
-//function alert(x){ HERE IS A FUNCTION DECLARATION WHEN YOUR CALLING A FUNCTION YOU`RE PASSING IN THE ARGUMENT,IN THIS CASE(X)
-//x
-//} SEE HOW WE USED{}
+//function alert(x){ //HERE IS A FUNCTION DECLARATION WHEN YOUR CALLING A FUNCTION YOU`RE PASSING IN THE ARGUMENT,IN THIS CASE(X)x
+//} //SEE HOW WE USED{}
 
 
 //--- Hard
 //create a variable that holds the h1
-const h1Holder=document.querySelector('h1');
+const h1Holder=document.querySelector("h1");
 //we use const and not let because we will not reasign the variable 
 
 
 //add an event listener to that element that console logs the sum of the two previous variables
-h1Holder.addEventListener('clic',sum)
+h1Holder.addEventListener("clic",sum);
 //this says add an event listener to the h1holder variable,that will listen when you will click on it(on h1) i want to run a function called sum
 //Easier said,when i click on h1 ,run the function sum
 
 //Now let`s go ahead and create the function sum becaus we don`t have it yet
 function sum(){
-console.log(num+inputedVal);
+console.log(num+ Number(inputedVal) );
 }
 
 
 //How we do explain all this now: WE HAD THE ORIGINAL VARIABLE CALLED "NUM" THAT HOLD THE NEGATIVE VALUE -9,AND THEN WE HAD THAT "inputedVal" THAT HOLDS +25,AND THEN WE ADDED A SMURF
 //WE ADDED A SMURF THAT IS GOING TO CLICK ON OUR H1 WILL RUN THAT FUNCTION CALLED SUM,AND THAT SUM IS GOING TO BE THE SUM OF THE 2 PREVIOUS VARIABLES(NUM+INPUTEDVALUE)
 //the result will be -925 because the input value was an empty string and we added to it 25,that means that became a string all of it.so we had now -9 plus string "25" and the result would be -925
+//what we can do so we will have a number,is that we put console.log(num+number(inputedVal) ) instead of console.log(num+inputedVal);
+//This is a way to put out a number value out fo a string 
