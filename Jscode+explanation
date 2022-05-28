@@ -1,0 +1,42 @@
+//--- Easy
+//create a variable and assign it a number
+let num=1;
+//minus 10 from that number
+num=num-10;
+//print that number to the console
+console.log(num);
+
+
+//--- Medium
+//create a variable that holds a value from the input
+let inputedVal=document.querySelector("#danceDanceRevolution").value;
+//add 25 to that number
+inputedVal=inputedVal+25; //or inputedVal+=25;
+//alert that number
+alert(inputedVal);  //HERE WE`RE CALLING THE FUNCTION IS A FUNCTION CALL IN jS THE ALERT FUNCTION IS ALREADY WRITED IN SO THAT`S WHY WE CAN CALL IT
+
+//BUT IF WE WANTED TO CREATE A FUNCTION WE WILL DO THIS:
+//function alert(x){ HERE IS A FUNCTION DECLARATION WHEN YOUR CALLING A FUNCTION YOU`RE PASSING IN THE ARGUMENT,IN THIS CASE(X)
+//x
+//} SEE HOW WE USED{}
+
+
+//--- Hard
+//create a variable that holds the h1
+const h1Holder=document.querySelector('h1');
+//we use const and not let because we will not reasign the variable 
+
+
+//add an event listener to that element that console logs the sum of the two previous variables
+h1Holder.addEventListener('clic',sum)
+//this says add an event listener to the h1holder variable,that will listen when you will click on it(on h1) i want to run a function called sum
+//Easier said,when i click on h1 ,run the function sum
+
+//Now let`s go ahead and create the function sum becaus we don`t have it yet
+function sum(){
+console.log(num+inputedVal);
+}
+
+
+//How we do explain all this now: WE HAD THE ORIGINAL VARIABLE CALLED "NUM" THAT HOLD THE NEGATIVE VALUE -9,AND THEN WE HAD THAT "inputedVal" THAT HOLDS +25,AND THEN WE ADDED A SMURF
+//WE ADDED A SMURF THAT IS GOING TO CLICK ON OUR H1 WILL RUN THAT FUNCTION CALLED SUM,AND THAT SUM IS GOING TO BE THE SUM OF THE 2 PREVIOUS VARIABLES(NUM+INPUTEDVALUE)
