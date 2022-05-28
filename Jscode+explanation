@@ -40,4 +40,4 @@ console.log(num+inputedVal);
 
 //How we do explain all this now: WE HAD THE ORIGINAL VARIABLE CALLED "NUM" THAT HOLD THE NEGATIVE VALUE -9,AND THEN WE HAD THAT "inputedVal" THAT HOLDS +25,AND THEN WE ADDED A SMURF
 //WE ADDED A SMURF THAT IS GOING TO CLICK ON OUR H1 WILL RUN THAT FUNCTION CALLED SUM,AND THAT SUM IS GOING TO BE THE SUM OF THE 2 PREVIOUS VARIABLES(NUM+INPUTEDVALUE)
-//the result will be -925 because the input value was an empty string and we added to it 25,that means that became a string all of it.so we had now -9 plus string 25 and the result would be -925
+//the result will be -925 because the input value was an empty string and we added to it 25,that means that became a string all of it.so we had now -9 plus string "25" and the result would be -925
