@@ -1,0 +1,20 @@
+//Create a function that grabs the number of snacks from the input and tells you to stop that many times
+
+//let`s set our even listener for the "help":
+document.querySelector('#help'),addEventListener('click', stopSnacking)
+
+//let`s now set up our function:
+function stopSnacking(){
+    //we get the value out of the input:
+    let numOfSnacks=Number(document.querySelector('input').value) //we say only 'input' because the input has no id in html,and we have only one input,and we take the value out of the input
+    //we also use Number() because we want to make sure that the number of snacks will actually be a number
+//now we want to do something over and over again,we need our loop:
+//(we also put a stop so it would stop ):
+document.querySelector('#stops').innerText="" //we let it empty ""
+   for(let i=1; i<=numOfSnacks; i++){
+       //now we need to tell them to stop:
+       document.querySelector('#stops').innerText+= " Stop!"
+
+   }
+}
+//it will print as many times as we click or put the number the innerText Stop! and we used on line 13 the innerText "" empty so will not add each time each click the innerText stop,it will stop at each number of snacks
