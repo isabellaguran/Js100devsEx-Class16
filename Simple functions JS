@@ -1,0 +1,42 @@
+//---Easy
+//create a function that subtracts two numbers and alerts the difference
+function subTwoNumsAndAlert(n1,n2){
+    alert(n1-n2)  //it will alert on the screen because we used alert
+}
+  subTwoNumsAndAlert(50,30)
+
+//create a function that divides three numbers and console logs the quotient
+function divThreeNumAndLogs(zebra,forest,unicorn){
+    console.log(zebra / forest / unicorn)
+}
+divThreeNumAndLogs(12,4,3) //it will print 1 because 12 goes into zebra,4 goes into forest and 3 goes into unicorn
+//create a function that multiplys three numbers and returns the product
+function multiplyThreeNumsAndReturn(num1,num2,num3){
+    return num1*num2*num3 //we use return,we dont use() because isnt a function is tells it to spit it out    
+}
+//multiplyThreeNumsAndReturn(5,10,2)
+ //we don`t see anything into the dom because return doesn`t print it to the console
+    //we can use:
+    let product=multiplyThreeNumsAndReturn(5,10,2) //5 get passed into num1,10 passed into num2,2 passed into num3
+    alert (product)
+//let`s return into money now to see how it works:
+function turnIntoMoney(){
+    let product=multiplyThreeNumsAndReturn(5,10,2)
+        alert('$' + product)
+}
+turnIntoMoney()  //we will have the alert $100
+
+
+//---Medium
+//create a function that takes in three numbers. Add the first two numbers and return the remainder of dividing the sum of the first two numbers by the third number
+function takeThreeNumbs(num1,num2,num3){
+    return (num1 + num2) % num3 //remember return spits out it doesn`t show so we have to use the console.log to see it
+}
+console.log(takeThreeNumbs(3,3,2))
+//---Hard
+//create a function that takes in 4 numbers. Multiply the first two numbers. If the product is greater than 100 add the sum of the last two numbers and console log the value. If the product is less that 100, subtract the difference of the last two numbers and console log the value. If the product is 100, multiply the first three numbers together and alert the remainder of dividing the fourth number
+//???function takeFourNumbers(n1,n2,n3,n4){
+   // if (n1*n2)> 100{
+     //   console.log(n3+n4)
+   // }else if(n1*n2)<100
+   // console.log(n3-n4)
