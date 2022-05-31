@@ -1,0 +1,19 @@
+//Create a function that has a loop that prints '21' 21 times to the console and then call that function
+function savage21(){
+    for (i=1; i<22; i++){
+        console.log('21')  //it will not run into our dom,because we didn`t call our function
+    }
+}
+
+//let`s call our function so it can run:
+savage21()
+//Bonus can you make it print '21' 21 times to the dom?
+//because we have our h2 with id into our html we can run in into the dom:
+function savage21(){
+    for (i=1; i<22; i++){
+        document.querySelector('#savageSays').innerText += " 21" //we put innertext to see it in to the dom,also put this into anki cards
+    }
+}
+savage21()
+//putting 21 into the dom means on that page when is loading to be seen(it did it 21 times but very quick)
+//to actually see it be done 21 times into the dom we put innerText +=" 21" and a little space between that 21
